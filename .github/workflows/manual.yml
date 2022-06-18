@@ -1,0 +1,16 @@
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: f96e4e11-f4c7-4042-bf56-be8d08f08463
+          heroku_app_name: youtube-upload1
+          heroku_email: youtube1@c2ptech.com
+          usedocker: true
+          docker_heroku_process_type: web
+          stack: "container"
