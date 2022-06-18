@@ -12,5 +12,5 @@ jobs:
           heroku_app_name: youtube-upload1
           heroku_email: youtube1@c2ptech.com
           usedocker: true
-          docker_heroku_process_type: web
+          docker_heroku_process_type: worker
           stack: "container"
