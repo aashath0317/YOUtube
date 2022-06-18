@@ -1,3 +1,3 @@
-FROM anasty17/mltb:latest
+FROM FROM ubuntu:20.04
 COPY . .
 CMD ["bash", "run.sh"]
